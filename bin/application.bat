@@ -1,7 +1,7 @@
 rem @echo off
 del database-*
 set MINGW_HOME=C:\MinGW
-set JAVA_HOME=..\java\jdk-21
+set JAVA_HOME=%JAVA_HOME%;..\java\jdk-21
 set PATH=%PATH%;%MINGW_HOME%
 set CLASSPATH=..\lib\ActivitiesApplication.jar
 set CLASSPATH=%CLASSPATH%;..\lib\EventDispatcher.jar
