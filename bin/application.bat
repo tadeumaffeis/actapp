@@ -1,10 +1,13 @@
-rem @echo off
-
+@echo off
 set PATH=%PATH%;%MINGW_HOME%
 
 rem *
 rem * Download JDK 21
 rem *
+echo *************************************
+echo * Status: Java 21 not found!        *
+echo * Action: Download JDK 21...        *
+echo *************************************
 IF EXIST ..\jdk-21.0.2 goto :CONTINUE_EXEC
 .\wget -c https://download.oracle.com/java/21/archive/jdk-21.0.2_windows-x64_bin.zip
 IF %ERRORLEVEL% NEQ 0 got :ERROR_JAVA_DOWNLOAD
@@ -24,6 +27,9 @@ del .\jdk-21.0.2_windows-x64_bin.zip
 
 :CONTINUE_EXEC
 
+rem *
+rem * executando aplicação
+rem *
 set JAVA_HOME=..\jdk-21.0.2
 set MINGW_HOME=C:\MinGW
 set CLASSPATH=..\lib\ActivitiesApplication.jar
