@@ -23,7 +23,7 @@ del .\jdk-21.0.2_windows-x64_bin.zip
 
 :CONTINUE_EXEC
 echo *************************************
-echo * Status: Java 21 not found!        *
+echo * Status: Java 21 found!            *
 echo * Action: Download JDK 21...        *
 echo *************************************
 rem *
@@ -31,6 +31,7 @@ rem * executando aplicação
 rem *
 set JAVA_HOME=..\jdk-21.0.2
 set MINGW_HOME=C:\MinGW
+set PATH=%PATH%;%CD%\%JAVA_HOME%\bin
 set CLASSPATH=..\lib\ActivitiesApplication.jar
 set CLASSPATH=%CLASSPATH%;..\lib\EventDispatcher.jar
 set CLASSPATH=%CLASSPATH%;..\lib\jackson-core-2.14.0-SNAPSHOT.jar
