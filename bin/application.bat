@@ -31,7 +31,7 @@ rem * executando aplicação
 rem *
 set JAVA_HOME=..\jdk-21.0.2
 set MINGW_HOME=C:\MinGW
-set PATH=%PATH%;%CD%\%JAVA_HOME%\bin
+set PATH=%CD%\%JAVA_HOME%\bin;%PATH%
 set CLASSPATH=..\lib\ActivitiesApplication.jar
 set CLASSPATH=%CLASSPATH%;..\lib\EventDispatcher.jar
 set CLASSPATH=%CLASSPATH%;..\lib\jackson-core-2.14.0-SNAPSHOT.jar
