@@ -1,0 +1,10 @@
+# Ignorar JDK baixado localmente
+jdk-21.0.2/*
+
+# Ignorar logs
+logs/
+*.log
+*.err
+
+# Ignorar pastas temporárias
+tmp/
