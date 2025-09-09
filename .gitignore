@@ -8,3 +8,4 @@ logs/
 
 # Ignorar pastas temporárias
 tmp/
+bin/database*
