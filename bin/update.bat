@@ -17,7 +17,7 @@ git clone https://github.com/tadeumaffeis/actapp.git ..\tmp\actapp
 REM === Copiar pasta lib para ../lib ===
 if exist ..\tmp\actapp\lib (
     echo Copiando pasta lib para ..\lib
-    xcopy /E /I /Y ..\tmp\actapp\lib ..\lib
+    xcopy /E /I /Y ..\tmp\actapp\lib\*.jar ..\lib
 ) else (
     echo ERRO: Pasta ..\tmp\actapp\lib nao encontrada!
 )
