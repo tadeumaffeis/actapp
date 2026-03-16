@@ -10,7 +10,7 @@ set "PATH=%PATH%;%MINGW_HOME%\bin"
 rem *
 rem * Download JDK 21
 rem *
-IF EXIST ..\jdk-25 goto :CONTINUE_EXEC
+IF EXIST ..\jdk-25.0.2 goto :CONTINUE_EXEC
 .\wget -c https://download.oracle.com/java/25/latest/jdk-25_windows-x64_bin.zip
 REM .\wget -c https://download.oracle.com/java/21/archive/jdk-21.0.2_windows-x64_bin.zip
 IF %ERRORLEVEL% NEQ 0 goto :ERROR_JAVA_DOWNLOAD
@@ -24,8 +24,8 @@ IF %ERRORLEVEL% NEQ 0 goto :ERROR_UNZIP_JAVA
 rem *
 rem * Movendo o JDK 21
 rem *
-IF EXIST ..\jdk-25 rmdir /s /q ..\jdk-25
-move jdk-25 ..\
+IF EXIST ..\jdk-25.0.2 rmdir /s /q ..\jdk-25.0.2
+move jdk-25.0.2 ..\
 del .\jdk-25_windows-x64_bin.zip
 
 :CONTINUE_EXEC
@@ -37,7 +37,7 @@ echo *************************************
 rem =========================
 rem Executando aplicação
 rem =========================
-set "JAVA_HOME=..\jdk-25"
+set "JAVA_HOME=..\jdk-25.0.2"
 set "PATH=%CD%\%JAVA_HOME%\bin;%PATH%"
 
 rem --- Monta CLASSPATH automaticamente com todos os .jar em ..\lib ---
@@ -65,7 +65,7 @@ goto :EXIT
 
 :ERROR_UNZIP_JAVA
 echo Erro ao descompactar o jdk 25
-IF EXIST .\jdk-25 rmdir /s /q .\jdk-25
+IF EXIST .\jdk-25 rmdir /s /q .\jdk-25.0.2
 goto :EXIT
 
 :EXIT
