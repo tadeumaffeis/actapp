@@ -27,7 +27,7 @@ set "JDK_TARGET_DIR=..\%JDK_FOLDER_NAME%"
 set "LIB_DIR=..\lib"
 set "LOG_DIR=..\logs"
 
-set "WGET_EXE=%SCRIPT_DIR%wget"
+set "WGET_EXE=%SCRIPT_DIR%wget.exe"
 set "UNZIP_EXE=%SCRIPT_DIR%GnuWin32\bin\unzip.exe"
 
 rem ----------------------------------------------------------------------------
