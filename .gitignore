@@ -1,5 +1,6 @@
 # Ignorar JDK baixado localmente
 jdk-21.0.2/*
+jdk-25.0.2/*
 
 # Ignorar logs
 logs/
