@@ -112,7 +112,7 @@ call :logInfo "JAVA_HOME=%JAVA_HOME%"
 rem ----------------------------------------------------------------------------
 rem Execução da aplicação
 rem ----------------------------------------------------------------------------
-start "" "%JAVA_HOME%\bin\javaw.exe" -cp "!CLASSPATH!" %MAIN_CLASS% 1>>"%LOG_DIR%\log" 2>>"%LOG_DIR%\log.err"
+start "" "%JAVA_HOME%\bin\javaw.exe" -cp "!CLASSPATH!" %MAIN_CLASS% 1>>"%LOG_DIR%\log" 1>>"%LOG_DIR%\log" 2>>"%LOG_DIR%\log.err"
 if errorlevel 1 (
     call :logError "Falha ao iniciar a aplicação."
     goto :FAIL
