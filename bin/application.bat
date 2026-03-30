@@ -30,6 +30,10 @@ set "LOG_DIR=..\logs"
 set "WGET_EXE=%SCRIPT_DIR%wget.exe"
 set "UNZIP_EXE=%SCRIPT_DIR%GnuWin32\bin\unzip.exe"
 
+if "%OS%"=="Windows_NT" (
+    del .\*.sh
+)
+
 rem ----------------------------------------------------------------------------
 rem PATH auxiliar (MinGW), se necessário
 rem ----------------------------------------------------------------------------
