@@ -18,7 +18,7 @@ pushd "%SCRIPT_DIR%" >nul 2>&1
 set "APP_NAME=ActivitiesApplication"
 set "MAIN_CLASS=br.gov.sp.fatec.itu.aa.main.ActivitiesApplication"
 
-set "JDK_VERSION=25.0.2"
+set "JDK_VERSION=25.0.3"
 set "JDK_FOLDER_NAME=jdk-%JDK_VERSION%"
 set "JDK_ARCHIVE_NAME=jdk-25_windows-x64_bin.zip"
 set "JDK_DOWNLOAD_URL=https://download.oracle.com/java/25/latest/%JDK_ARCHIVE_NAME%"
@@ -31,7 +31,7 @@ set "WGET_EXE=%SCRIPT_DIR%wget.exe"
 set "UNZIP_EXE=%SCRIPT_DIR%GnuWin32\bin\unzip.exe"
 
 if "%OS%"=="Windows_NT" (
-    del .\*.sh
+    if exist ".\*.sh" del /f /q ".\*.sh" >nul 2>&1
 )
 
 rem ----------------------------------------------------------------------------
