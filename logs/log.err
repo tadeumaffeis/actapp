@@ -162,3 +162,29 @@ WARNING: java.lang.System::load has been called by org.sqlite.SQLiteJDBCLoader i
 WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
 WARNING: Restricted methods will be blocked in a future release unless native access is enabled
 
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.sqlite.SQLiteJDBCLoader in an unnamed module (file:/home/atm/Documentos/git-repositories/actapp/lib/sqlite-jdbc-3.50.2.1-SNAPSHOT.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+mar. 26, 2026 12:11:40 PM org.apache.pdfbox.cos.COSDocument finalize
+WARNING: Warning: You did not close a PDF Document
+mar. 26, 2026 12:13:08 PM org.apache.pdfbox.cos.COSDocument finalize
+WARNING: Warning: You did not close a PDF Document
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.sqlite.SQLiteJDBCLoader in an unnamed module (file:/home/atm/Documentos/git-repositories/actapp/lib/sqlite-jdbc-3.50.2.1-SNAPSHOT.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+jun. 12, 2026 8:33:31 AM br.gov.sp.fatec.itu.aa.gui.AssignmentSendService process
+SEVERE: Falha no envio da atividade
+java.lang.Exception: RA do aluno não retornado pelo servidor
+	at br.gov.sp.fatec.itu.aa.gui.AssignmentSendService.authenticateStudent(AssignmentSendService.java:181)
+	at br.gov.sp.fatec.itu.aa.gui.AssignmentSendService.process(AssignmentSendService.java:81)
+	at br.gov.sp.fatec.itu.aa.gui.AssignmentSendService.lambda$execute$0(AssignmentSendService.java:72)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+
