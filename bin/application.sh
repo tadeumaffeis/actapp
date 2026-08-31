@@ -111,7 +111,7 @@ trap cleanup EXIT
 APP_NAME="ActivitiesApplication"
 MAIN_CLASS="br.gov.sp.fatec.itu.aa.main.ActivitiesApplication"
 
-JDK_VERSION="25.0.3"
+JDK_VERSION="25.0.4.1"
 JDK_FOLDER_NAME="jdk-${JDK_VERSION}"
 
 # Oracle JDK para Linux x64. No Windows o .bat usa jdk-25_windows-x64_bin.zip.
